@@ -20,14 +20,14 @@
 <!--End of Bootstrap stuff-->
     <link rel="stylesheet" type="text/css" href="../../css/w3.css">
     <link rel="stylesheet" type="text/css" href="./index.css">
-  
+</head>  
 <body>
     <h1>Created by Michael C on April 30, 2019</h1>
     <button class="w3-btn w3-khaki" id="MilButton" name="milTime" onClick="changeMilitaryTime()" type="button">Click here to change the clock to the American Standard</button>
     <br>
     <div id="clockDisplay" class="clockContainer"></div>
     <p style="color: white">Use these buttons to manipulate the time</p>
-    <input class="w3-btn w3-cyan" type="button" value=" + " onClick="addOne()"><input class="w3-btn w3-cyan" type="button" value="Reset" onClick="reset()"><input class="w3-btn w3-cyan"type="button" value="-" onClick="minusOne()">
+ <!--   <input class="w3-btn w3-cyan" type="button" value=" + " onClick="addOne()"><input class="w3-btn w3-cyan" type="button" value="Reset" onClick="reset()"><input class="w3-btn w3-cyan"type="button" value="-" onClick="minusOne()">-->
    <h2 style="">Current skip amount:</h2>
     <h2 style="display: inline" id="time">0</h2>
 
@@ -45,9 +45,9 @@
             <input type="text" class="col-3" placeholder="parent id">
         </div>
         <div class="btn-group mt-2">
-            <span class="btn btn-warning">Create New Element</span>
+            <span class="btn btn-warning" onclick="create_Ele()">Create New Element</span>
             <span class="btn btn-danger">Remove Last Element</span>
-            <span class="btn btn-outline-secondary">Reset</span>
+            <span class="btn btn-outline-secondary" onclick="reset()">Reset</span>
         </div>
     </div>
 </div>
@@ -62,7 +62,9 @@
 
 
 
-    <script src="./index.js"></script>
-</head>
+   <!-- <script src="./index.js"></script>-->
+    
+
 </body>
+<script src="./app.js"></script>
 </html>
