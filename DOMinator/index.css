@@ -1,5 +1,6 @@
 body{
     background-color: #238748;
+    margin-bottom: 100px;
 }
 #clockDisplay{
     font-size: 2em;
